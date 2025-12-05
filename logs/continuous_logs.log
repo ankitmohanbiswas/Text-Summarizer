@@ -59,3 +59,60 @@
 [2025-12-05 13:37:00,556: INFO: common: created directory atartifacts/data_ingestion:]
 [2025-12-05 13:37:04,089: INFO: data_ingestion: File is downloaded:]
 [2025-12-05 13:37:04,244: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 16:37:47,636: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 16:37:47,638: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 16:37:47,640: INFO: common: created directory atartifacts:]
+[2025-12-05 16:38:13,542: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 16:38:13,544: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 16:38:13,546: INFO: common: created directory atartifacts:]
+[2025-12-05 16:38:25,284: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 16:38:25,289: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 16:38:25,291: INFO: common: created directory atartifacts:]
+[2025-12-05 16:38:46,390: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 16:38:46,393: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 16:38:46,394: INFO: common: created directory atartifacts:]
+[2025-12-05 16:39:33,186: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 16:39:33,188: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 16:39:33,189: INFO: common: created directory atartifacts:]
+[2025-12-05 16:40:52,032: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 16:40:52,035: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 16:40:52,037: INFO: common: created directory atartifacts:]
+[2025-12-05 16:41:13,320: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 16:41:13,322: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 16:41:13,324: INFO: common: created directory atartifacts:]
+[2025-12-05 16:59:18,915: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 16:59:18,918: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 16:59:18,920: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 16:59:18,920: INFO: common: created directory atartifacts:]
+[2025-12-05 16:59:18,920: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 16:59:18,921: INFO: data_ingestion: File already exits:]
+[2025-12-05 16:59:18,987: ERROR: main: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow':]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.inititate_data_ingestion()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage1_DATA_ING.py", line 15, in inititate_data_ingestion
+    data_ingestion.extract_zip_files()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\data_ingestion.py", line 31, in extract_zip_files
+    zip_ref.extractall(unzip_path)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\zipfile\__init__.py", line 1775, in extractall
+    self._extract_member(zipinfo, path, pwd)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\zipfile\__init__.py", line 1836, in _extract_member
+    open(targetpath, "wb") as target:
+    ~~~~^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+[2025-12-05 17:03:28,093: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 17:03:28,096: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 17:03:28,097: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 17:03:28,097: INFO: common: created directory atartifacts:]
+[2025-12-05 17:03:28,098: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 17:03:32,100: INFO: data_ingestion: File is downloaded:]
+[2025-12-05 17:03:32,250: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 17:03:32,250: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 17:03:32,252: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 17:03:32,253: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 17:03:32,254: INFO: common: created directory atartifacts:]
+[2025-12-05 17:03:37,820: INFO: main: Data Transformation Stage has completed:]
