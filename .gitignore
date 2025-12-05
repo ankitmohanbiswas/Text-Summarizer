@@ -1,3 +1,5 @@
-venv/
-artifacts/
+data/
+saved_models/
+outputs/
 logs/
+venv/
