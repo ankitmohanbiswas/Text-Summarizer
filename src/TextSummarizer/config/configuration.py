@@ -2,6 +2,8 @@ from src.TextSummarizer.constants import *
 from src.TextSummarizer.utils.common import read_yaml, create_directories
 from src.TextSummarizer.entity import DataIngestionConfig
 from src.TextSummarizer.entity import DataTransformationConfig
+from src.TextSummarizer.entity import ModelTrainerConfig
+from src.TextSummarizer.entity import ModelEvaluationConfig
 
 class ConfigurationManager:
     def __init__(self,
@@ -36,3 +38,37 @@ class ConfigurationManager:
 
         return data_transformation_config
         
+
+    def get_model_trainer_config(self)->ModelTrainerConfig:
+        config=self.config.model_trainer
+        parmas=self.params.TrainingArguments
+
+        model_trainer_config=ModelTrainerConfig(
+            root_dir=Path(config.root_dir),
+            data_path=Path(config.data_path),
+            model_ckpt=config.model_ckpt,
+            num_train_epochs=parmas.num_train_epochs,
+            per_device_train_batch_size=parmas.per_device_train_batch_size,
+            per_device_eval_batch_size=parmas.per_device_eval_batch_size,
+            gradient_accumulation_steps=parmas.gradient_accumulation_steps,
+            warmup_steps=parmas.warmup_steps,
+            learning_rate=parmas.learning_rate,
+            logging_steps=parmas.logging_steps,
+            fp16=parmas.fp16,
+            save_strategy=parmas.save_strategy,
+            report_to=parmas.report_to,
+            max_steps=200,
+            push_to_hub=False
+                )
+        return model_trainer_config
+    
+    def get_model_evaluation_config(self)-> ModelEvaluationConfig:
+        config= self.config.model_evaluation
+        model_evaluation_config= ModelEvaluationConfig(
+            root_dir= config.root_dir,
+            data_path= config.data_path,
+            model_path= config.model_path,
+            tokenizer_path= config.tokenizer_path,
+            metric_file_name= config.metric_file_name
+        )
+        return model_evaluation_config

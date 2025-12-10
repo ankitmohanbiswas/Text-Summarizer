@@ -128,3 +128,1047 @@ OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset
 [2025-12-05 17:07:11,516: INFO: common: yaml file params.yaml loaded successfully:]
 [2025-12-05 17:07:11,517: INFO: common: created directory atartifacts:]
 [2025-12-05 17:07:17,079: INFO: main: Data Transformation Stage has completed:]
+[2025-12-05 17:54:42,278: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 17:56:04,955: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 17:56:49,658: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 17:56:49,671: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 17:56:49,673: INFO: common: created directory atartifacts:]
+[2025-12-05 18:01:40,471: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 18:01:40,484: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 18:01:40,486: INFO: common: created directory atartifacts:]
+[2025-12-05 18:02:30,707: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 18:02:30,711: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 18:02:30,712: INFO: common: created directory atartifacts:]
+[2025-12-05 18:05:10,747: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 18:05:10,751: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 18:05:10,753: INFO: common: created directory atartifacts:]
+[2025-12-05 18:07:47,927: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 18:07:47,931: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 18:07:47,932: INFO: common: created directory atartifacts:]
+[2025-12-05 18:25:03,873: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 18:25:03,878: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 18:25:03,879: INFO: common: created directory atartifacts:]
+[2025-12-05 18:25:06,985: WARNING: file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`:]
+[2025-12-05 18:41:59,386: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 18:41:59,391: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 18:41:59,394: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 18:41:59,394: INFO: common: created directory atartifacts:]
+[2025-12-05 18:41:59,395: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 18:42:03,756: INFO: data_ingestion: File is downloaded:]
+[2025-12-05 18:42:03,902: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 18:42:03,902: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 18:42:03,905: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 18:42:03,908: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 18:42:03,908: INFO: common: created directory atartifacts:]
+[2025-12-05 18:42:09,635: INFO: main: Data Transformation Stage has completed:]
+[2025-12-05 18:42:09,635: INFO: main: stage Model Training Stage has started:]
+[2025-12-05 18:42:09,638: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 18:42:09,640: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 18:42:09,641: INFO: common: created directory atartifacts:]
+[2025-12-05 18:42:09,641: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_model_trainer_config':]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 36, in <module>
+    model_trainer_pipeline.inititate_model_training()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage_3_model_trainer.py", line 11, in inititate_model_training
+    model_trainer_config=config.get_data_model_trainer_config()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_model_trainer_config'. Did you mean: 'get_model_trainer_config'?
+[2025-12-05 18:43:03,804: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 18:43:03,808: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 18:43:03,811: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 18:43:03,812: INFO: common: created directory atartifacts:]
+[2025-12-05 18:43:03,817: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 18:43:06,461: INFO: data_ingestion: File is downloaded:]
+[2025-12-05 18:43:06,597: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 18:43:06,598: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 18:43:06,600: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 18:43:06,603: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 18:43:06,603: INFO: common: created directory atartifacts:]
+[2025-12-05 18:43:12,054: INFO: main: Data Transformation Stage has completed:]
+[2025-12-05 18:43:12,055: INFO: main: stage Model Training Stage has started:]
+[2025-12-05 18:43:12,058: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 18:43:12,061: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 18:43:12,062: INFO: common: created directory atartifacts:]
+[2025-12-05 18:43:13,521: WARNING: file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`:]
+[2025-12-05 18:52:10,751: WARNING: file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`:]
+[2025-12-05 18:52:22,919: ERROR: main: Directory artifacts\data_transformation\samsum_dataset not found:]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 36, in <module>
+    model_trainer_pipeline.inititate_model_training()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage_3_model_trainer.py", line 14, in inititate_model_training
+    model_trainer.train()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\model_trainer.py", line 24, in train
+    ds=load_from_disk(self.config.data_path)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\load.py", line 1471, in load_from_disk
+    raise FileNotFoundError(f"Directory {dataset_path} not found")
+FileNotFoundError: Directory artifacts\data_transformation\samsum_dataset not found
+[2025-12-05 19:04:41,375: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 19:04:41,403: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:04:41,406: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:04:41,407: INFO: common: created directory atartifacts:]
+[2025-12-05 19:04:41,407: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 19:04:41,407: INFO: data_ingestion: File already exits:]
+[2025-12-05 19:04:41,534: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 19:04:41,534: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 19:04:41,537: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:04:41,539: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:04:41,540: INFO: common: created directory atartifacts:]
+[2025-12-05 19:04:43,784: INFO: main: Data Transformation Stage has completed:]
+[2025-12-05 19:04:43,785: INFO: main: stage Model Training Stage has started:]
+[2025-12-05 19:04:43,788: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:04:43,790: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:04:43,791: INFO: common: created directory atartifacts:]
+[2025-12-05 19:05:00,029: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`:]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 36, in <module>
+    model_trainer_pipeline.inititate_model_training()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage_3_model_trainer.py", line 14, in inititate_model_training
+    model_trainer.train()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\model_trainer.py", line 25, in train
+    trainer_args = TrainingArguments(
+        output_dir=self.config.root_dir,
+    ...<11 lines>...
+        report_to="none",
+    )
+  File "<string>", line 135, in __init__
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\training_args.py", line 1811, in __post_init__
+    self.device
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\training_args.py", line 2355, in device
+    return self._setup_devices
+           ^^^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\functools.py", line 1037, in __get__
+    val = self.func(instance)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\training_args.py", line 2225, in _setup_devices
+    raise ImportError(
+    ...<2 lines>...
+    )
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`
+[2025-12-05 19:06:19,824: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 19:06:19,828: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:06:19,831: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:06:19,832: INFO: common: created directory atartifacts:]
+[2025-12-05 19:06:19,833: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 19:06:23,428: INFO: data_ingestion: File is downloaded:]
+[2025-12-05 19:06:23,572: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 19:06:23,572: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 19:06:23,575: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:06:23,577: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:06:23,578: INFO: common: created directory atartifacts:]
+[2025-12-05 19:06:29,411: INFO: main: Data Transformation Stage has completed:]
+[2025-12-05 19:06:29,412: INFO: main: stage Model Training Stage has started:]
+[2025-12-05 19:06:29,414: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:06:29,417: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:06:29,417: INFO: common: created directory atartifacts:]
+[2025-12-05 19:06:42,485: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`:]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 36, in <module>
+    model_trainer_pipeline.inititate_model_training()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage_3_model_trainer.py", line 14, in inititate_model_training
+    model_trainer.train()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\model_trainer.py", line 25, in train
+    trainer_args = TrainingArguments(
+        output_dir=self.config.root_dir,
+    ...<11 lines>...
+        report_to="none",
+    )
+  File "<string>", line 135, in __init__
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\training_args.py", line 1811, in __post_init__
+    self.device
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\training_args.py", line 2355, in device
+    return self._setup_devices
+           ^^^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\functools.py", line 1037, in __get__
+    val = self.func(instance)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\training_args.py", line 2225, in _setup_devices
+    raise ImportError(
+    ...<2 lines>...
+    )
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`
+[2025-12-05 19:08:00,350: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 19:08:00,355: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:08:00,359: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:08:00,360: INFO: common: created directory atartifacts:]
+[2025-12-05 19:08:00,361: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 19:08:00,361: INFO: data_ingestion: File already exits:]
+[2025-12-05 19:08:00,566: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 19:08:00,567: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 19:08:00,572: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:08:00,577: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:08:00,579: INFO: common: created directory atartifacts:]
+[2025-12-05 19:08:03,580: INFO: main: Data Transformation Stage has completed:]
+[2025-12-05 19:08:03,580: INFO: main: stage Model Training Stage has started:]
+[2025-12-05 19:08:03,584: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:08:03,587: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:08:03,589: INFO: common: created directory atartifacts:]
+[2025-12-05 19:11:09,951: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 19:11:09,954: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:11:09,956: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:11:09,957: INFO: common: created directory atartifacts:]
+[2025-12-05 19:11:09,957: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 19:11:09,958: INFO: data_ingestion: File already exits:]
+[2025-12-05 19:11:10,087: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 19:11:10,087: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 19:11:10,090: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:11:10,092: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:11:10,093: INFO: common: created directory atartifacts:]
+[2025-12-05 19:11:12,339: INFO: main: Data Transformation Stage has completed:]
+[2025-12-05 19:11:12,339: INFO: main: stage Model Training Stage has started:]
+[2025-12-05 19:11:12,342: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:11:12,344: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:11:12,345: INFO: common: created directory atartifacts:]
+[2025-12-05 19:22:34,387: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 19:22:34,392: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:22:34,396: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:22:34,397: INFO: common: created directory atartifacts:]
+[2025-12-05 19:22:34,399: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 19:22:38,098: INFO: data_ingestion: File is downloaded:]
+[2025-12-05 19:22:38,279: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 19:22:38,280: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 19:22:38,282: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:22:38,285: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:22:38,286: INFO: common: created directory atartifacts:]
+[2025-12-05 19:22:44,127: INFO: main: Data Transformation Stage has completed:]
+[2025-12-05 19:22:44,128: INFO: main: stage Model Training Stage has started:]
+[2025-12-05 19:22:44,131: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:22:44,133: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:22:44,134: INFO: common: created directory atartifacts:]
+[2025-12-05 19:23:06,060: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 19:23:06,064: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:23:06,066: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:23:06,067: INFO: common: created directory atartifacts:]
+[2025-12-05 19:23:06,067: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 19:23:06,068: INFO: data_ingestion: File already exits:]
+[2025-12-05 19:23:06,187: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 19:23:06,188: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 19:23:06,190: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:23:06,193: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:23:06,194: INFO: common: created directory atartifacts:]
+[2025-12-05 19:23:08,112: ERROR: main: [Errno 22] Invalid argument: 'G:/PROJECT/Text-Summarizer/artifacts/data_transformation/transformed_dataset/train/data-00000-of-00001.arrow':]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 22, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage2_data_transformation.py", line 13, in initiate_data_transformation
+    data_transformation.convert()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\data_transformation.py", line 33, in convert
+    ds1.save_to_disk(os.path.join(self.config.root_dir, "transformed_dataset"))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\dataset_dict.py", line 1360, in save_to_disk
+    dataset.save_to_disk(
+    ~~~~~~~~~~~~~~~~~~~~^
+        posixpath.join(dataset_dict_path, k),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_dataset.py", line 1641, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_dataset.py", line 1665, in _save_to_disk_single
+    writer = ArrowWriter(
+        features=shard.features,
+    ...<2 lines>...
+        embed_local_files=True,
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_writer.py", line 451, in __init__
+    self.stream = self._fs.open(path, "wb")
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\spec.py", line 1349, in open
+    f = self._open(
+        path,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 210, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 387, in __init__
+    self._open()
+    ~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 392, in _open
+    self.f = open(self.path, mode=self.mode)
+             ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'G:/PROJECT/Text-Summarizer/artifacts/data_transformation/transformed_dataset/train/data-00000-of-00001.arrow'
+[2025-12-05 19:25:32,643: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 19:25:32,647: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:25:32,650: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:25:32,651: INFO: common: created directory atartifacts:]
+[2025-12-05 19:25:32,651: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 19:25:32,652: INFO: data_ingestion: File already exits:]
+[2025-12-05 19:25:32,766: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 19:25:32,767: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 19:25:32,769: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:25:32,772: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:25:32,772: INFO: common: created directory atartifacts:]
+[2025-12-05 19:25:34,676: INFO: main: Data Transformation Stage has completed:]
+[2025-12-05 19:25:34,676: INFO: main: stage Model Training Stage has started:]
+[2025-12-05 19:25:34,680: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:25:34,683: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:25:34,684: INFO: common: created directory atartifacts:]
+[2025-12-05 19:25:53,592: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 19:25:53,596: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:25:53,599: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:25:53,599: INFO: common: created directory atartifacts:]
+[2025-12-05 19:25:53,600: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 19:25:53,600: INFO: data_ingestion: File already exits:]
+[2025-12-05 19:25:53,718: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 19:25:53,719: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 19:25:53,722: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:25:53,724: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:25:53,725: INFO: common: created directory atartifacts:]
+[2025-12-05 19:25:55,188: ERROR: main: [Errno 22] Invalid argument: 'G:/PROJECT/Text-Summarizer/artifacts/data_transformation/transformed_dataset/train/data-00000-of-00001.arrow':]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 22, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage2_data_transformation.py", line 13, in initiate_data_transformation
+    data_transformation.convert()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\data_transformation.py", line 33, in convert
+    ds1.save_to_disk(os.path.join(self.config.root_dir, "transformed_dataset"))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\dataset_dict.py", line 1360, in save_to_disk
+    dataset.save_to_disk(
+    ~~~~~~~~~~~~~~~~~~~~^
+        posixpath.join(dataset_dict_path, k),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_dataset.py", line 1641, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_dataset.py", line 1665, in _save_to_disk_single
+    writer = ArrowWriter(
+        features=shard.features,
+    ...<2 lines>...
+        embed_local_files=True,
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_writer.py", line 451, in __init__
+    self.stream = self._fs.open(path, "wb")
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\spec.py", line 1349, in open
+    f = self._open(
+        path,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 210, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 387, in __init__
+    self._open()
+    ~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 392, in _open
+    self.f = open(self.path, mode=self.mode)
+             ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'G:/PROJECT/Text-Summarizer/artifacts/data_transformation/transformed_dataset/train/data-00000-of-00001.arrow'
+[2025-12-05 19:33:08,477: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 19:33:08,480: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:33:08,483: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:33:08,484: INFO: common: created directory atartifacts:]
+[2025-12-05 19:33:08,485: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 19:33:12,009: INFO: data_ingestion: File is downloaded:]
+[2025-12-05 19:33:12,151: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 19:33:12,151: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 19:33:12,154: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:33:12,157: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:33:12,157: INFO: common: created directory atartifacts:]
+[2025-12-05 19:33:17,732: INFO: main: Data Transformation Stage has completed:]
+[2025-12-05 19:33:17,732: INFO: main: stage Model Training Stage has started:]
+[2025-12-05 19:33:17,735: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:33:17,737: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:33:17,738: INFO: common: created directory atartifacts:]
+[2025-12-05 19:33:36,402: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 19:33:36,405: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:33:36,408: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:33:36,409: INFO: common: created directory atartifacts:]
+[2025-12-05 19:33:36,409: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 19:33:36,410: INFO: data_ingestion: File already exits:]
+[2025-12-05 19:33:36,529: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 19:33:36,529: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 19:33:36,531: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:33:36,534: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:33:36,534: INFO: common: created directory atartifacts:]
+[2025-12-05 19:33:38,314: ERROR: main: [Errno 22] Invalid argument: 'G:/PROJECT/Text-Summarizer/artifacts/data_transformation/transformed_dataset/train/data-00000-of-00001.arrow':]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 22, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage2_data_transformation.py", line 13, in initiate_data_transformation
+    data_transformation.convert()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\data_transformation.py", line 33, in convert
+    ds1.save_to_disk(os.path.join(self.config.root_dir, "transformed_dataset"))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\dataset_dict.py", line 1360, in save_to_disk
+    dataset.save_to_disk(
+    ~~~~~~~~~~~~~~~~~~~~^
+        posixpath.join(dataset_dict_path, k),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_dataset.py", line 1641, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_dataset.py", line 1665, in _save_to_disk_single
+    writer = ArrowWriter(
+        features=shard.features,
+    ...<2 lines>...
+        embed_local_files=True,
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_writer.py", line 451, in __init__
+    self.stream = self._fs.open(path, "wb")
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\spec.py", line 1349, in open
+    f = self._open(
+        path,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 210, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 387, in __init__
+    self._open()
+    ~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 392, in _open
+    self.f = open(self.path, mode=self.mode)
+             ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'G:/PROJECT/Text-Summarizer/artifacts/data_transformation/transformed_dataset/train/data-00000-of-00001.arrow'
+[2025-12-05 19:39:59,172: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 19:39:59,176: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:39:59,179: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:39:59,180: INFO: common: created directory atartifacts:]
+[2025-12-05 19:39:59,180: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 19:40:02,689: INFO: data_ingestion: File is downloaded:]
+[2025-12-05 19:40:02,829: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 19:40:02,830: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 19:40:02,833: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:40:02,835: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:40:02,835: INFO: common: created directory atartifacts:]
+[2025-12-05 19:40:08,206: INFO: main: Data Transformation Stage has completed:]
+[2025-12-05 19:40:08,206: INFO: main: stage Model Training Stage has started:]
+[2025-12-05 19:40:08,208: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 19:40:08,210: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 19:40:08,211: INFO: common: created directory atartifacts:]
+[2025-12-05 20:43:22,709: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 20:43:22,716: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 20:43:22,718: INFO: common: created directory atartifacts:]
+[2025-12-05 20:50:17,582: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 20:50:17,587: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 20:50:17,589: INFO: common: created directory atartifacts:]
+[2025-12-05 20:50:22,577: WARNING: file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`:]
+[2025-12-05 21:00:21,403: WARNING: file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`:]
+[2025-12-05 21:06:29,889: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-05 21:06:29,900: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 21:06:29,903: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 21:06:29,905: INFO: common: created directory atartifacts:]
+[2025-12-05 21:06:29,906: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-05 21:06:38,725: INFO: data_ingestion: File is downloaded:]
+[2025-12-05 21:06:38,904: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-05 21:06:38,905: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-05 21:06:38,909: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 21:06:38,912: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 21:06:38,912: INFO: common: created directory atartifacts:]
+[2025-12-05 21:06:45,116: INFO: main: Data Transformation Stage has completed:]
+[2025-12-05 21:06:45,116: INFO: main: stage Model Training Stage has started:]
+[2025-12-05 21:06:45,120: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 21:06:45,122: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 21:06:45,123: INFO: common: created directory atartifacts:]
+[2025-12-05 21:07:36,170: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 21:07:36,183: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 21:07:36,186: INFO: common: created directory atartifacts:]
+[2025-12-05 21:08:28,400: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 21:08:28,408: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 21:08:28,413: INFO: common: created directory atartifacts:]
+[2025-12-05 21:11:21,951: WARNING: file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`:]
+[2025-12-05 21:24:40,625: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 21:24:40,635: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 21:24:40,637: INFO: common: created directory atartifacts:]
+[2025-12-05 21:26:12,725: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 21:26:12,730: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 21:26:12,733: INFO: common: created directory atartifacts:]
+[2025-12-05 21:28:25,925: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-05 21:28:25,931: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-05 21:28:25,933: INFO: common: created directory atartifacts:]
+[2025-12-06 11:05:44,340: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-06 11:05:44,358: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-06 11:05:44,374: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-06 11:05:44,375: INFO: common: created directory atartifacts:]
+[2025-12-06 11:05:44,376: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-06 11:05:44,376: INFO: data_ingestion: File already exits:]
+[2025-12-06 11:05:44,553: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-06 11:05:44,554: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-06 11:05:44,557: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-06 11:05:44,560: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-06 11:05:44,560: INFO: common: created directory atartifacts:]
+[2025-12-06 11:05:47,010: INFO: main: Data Transformation Stage has completed:]
+[2025-12-06 11:05:47,010: INFO: main: stage Model Training Stage has started:]
+[2025-12-06 11:05:47,016: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-06 11:05:47,018: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-06 11:05:47,019: INFO: common: created directory atartifacts:]
+[2025-12-06 11:06:02,533: ERROR: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy':]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 37, in <module>
+    model_trainer_pipeline.inititate_model_training()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage_3_model_trainer.py", line 14, in inititate_model_training
+    model_trainer.train()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\model_trainer.py", line 25, in train
+    trainer_args = TrainingArguments(
+            output_dir=self.config.root_dir,
+    ...<24 lines>...
+            push_to_hub=False
+        )
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2025-12-06 11:06:44,495: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-06 11:06:44,499: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-06 11:06:44,501: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-06 11:06:44,502: INFO: common: created directory atartifacts:]
+[2025-12-06 11:06:44,503: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-06 11:06:44,504: INFO: data_ingestion: File already exits:]
+[2025-12-06 11:06:44,621: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-06 11:06:44,622: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-06 11:06:44,626: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-06 11:06:44,629: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-06 11:06:44,630: INFO: common: created directory atartifacts:]
+[2025-12-06 11:06:46,498: INFO: main: Data Transformation Stage has completed:]
+[2025-12-06 11:06:46,498: INFO: main: stage Model Training Stage has started:]
+[2025-12-06 11:06:46,503: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-06 11:06:46,505: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-06 11:06:46,506: INFO: common: created directory atartifacts:]
+[2025-12-06 11:30:46,007: INFO: main: Model Training Stage has completed:]
+[2025-12-06 11:30:46,024: INFO: main: stage Model Evaluation Stage has started:]
+[2025-12-06 11:30:46,052: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-06 11:30:46,063: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-06 11:30:46,066: INFO: common: created directory atartifacts:]
+[2025-12-06 11:31:03,541: ERROR: main: index out of range in self:]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 49, in <module>
+    model_evaluation_pipeline.inititate_model_evaluation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage_4_model_evaluation.py", line 14, in inititate_model_evaluation
+    model_evaluation.evaluate()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\model_evaluation.py", line 73, in evaluate
+    score = self.calculate_metric_on_test_ds(
+    dataset_samsum_pt['test'][0:10], rouge_metric, model_pegasus, tokenizer, batch_size = 2, column_text = 'dialogue', column_summary= 'summary'
+        )
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\model_evaluation.py", line 38, in calculate_metric_on_test_ds
+    summaries = model.generate(input_ids=inputs["input_ids"].to(device),
+                    attention_mask=inputs["attention_mask"].to(device),
+                    length_penalty=0.8, num_beams=8, max_length=128)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\torch\utils\_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\generation\utils.py", line 2465, in generate
+    model_kwargs = self._prepare_encoder_decoder_kwargs_for_generation(
+        inputs_tensor, model_kwargs, model_input_name, generation_config
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\generation\utils.py", line 861, in _prepare_encoder_decoder_kwargs_for_generation
+    model_kwargs["encoder_outputs"]: ModelOutput = encoder(**encoder_kwargs)  # type: ignore
+                                                   ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\torch\nn\modules\module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\torch\nn\modules\module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\models\pegasus\modeling_pegasus.py", line 810, in forward
+    embed_pos = self.embed_positions(input_shape)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\torch\nn\modules\module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\torch\nn\modules\module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\torch\utils\_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\models\pegasus\modeling_pegasus.py", line 111, in forward
+    return super().forward(position_ids)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\torch\nn\modules\sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\torch\nn\functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+[2025-12-06 11:49:01,894: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-06 11:49:01,900: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-06 11:49:01,902: INFO: common: created directory atartifacts:]
+[2025-12-10 13:10:22,781: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-10 13:10:22,796: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 13:10:22,808: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 13:10:22,809: INFO: common: created directory atartifacts:]
+[2025-12-10 13:10:22,809: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-10 13:10:22,810: INFO: data_ingestion: File already exits:]
+[2025-12-10 13:10:22,976: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-10 13:10:22,976: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-10 13:10:22,980: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 13:10:22,982: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 13:10:22,982: INFO: common: created directory atartifacts:]
+[2025-12-10 13:10:25,160: INFO: main: Data Transformation Stage has completed:]
+[2025-12-10 13:10:25,160: INFO: main: stage Model Training Stage has started:]
+[2025-12-10 13:10:25,163: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 13:10:25,166: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 13:10:25,167: INFO: common: created directory atartifacts:]
+[2025-12-10 13:11:58,935: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 13:11:58,940: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 13:11:58,943: INFO: common: created directory atartifacts:]
+[2025-12-10 13:19:41,456: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 13:19:41,462: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 13:19:41,464: INFO: common: created directory atartifacts:]
+[2025-12-10 13:23:34,737: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 13:23:34,740: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 13:23:34,742: INFO: common: created directory atartifacts:]
+[2025-12-10 13:30:38,221: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 13:30:38,225: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 13:30:38,227: INFO: common: created directory atartifacts:]
+[2025-12-10 13:31:12,184: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 13:31:12,188: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 13:31:12,190: INFO: common: created directory atartifacts:]
+[2025-12-10 13:39:43,291: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 13:39:43,295: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 13:39:43,297: INFO: common: created directory atartifacts:]
+[2025-12-10 13:40:42,568: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 13:40:42,572: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 13:40:42,573: INFO: common: created directory atartifacts:]
+[2025-12-10 13:44:33,135: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 13:44:33,138: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 13:44:33,142: INFO: common: created directory atartifacts:]
+[2025-12-10 13:45:47,950: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 13:45:47,954: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 13:45:47,956: INFO: common: created directory atartifacts:]
+[2025-12-10 13:54:01,329: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 13:54:01,332: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 13:54:01,334: INFO: common: created directory atartifacts:]
+[2025-12-10 14:22:09,387: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 14:22:09,391: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 14:22:09,392: INFO: common: created directory atartifacts:]
+[2025-12-10 14:22:11,003: WARNING: file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`:]
+[2025-12-10 14:22:16,936: WARNING: file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`:]
+[2025-12-10 16:48:19,206: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 16:48:19,224: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 16:48:19,226: INFO: common: created directory atartifacts:]
+[2025-12-10 16:50:03,387: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 16:50:03,390: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 16:50:03,392: INFO: common: created directory atartifacts:]
+[2025-12-10 16:50:20,875: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 16:50:20,880: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 16:50:20,881: INFO: common: created directory atartifacts:]
+[2025-12-10 16:54:15,845: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 16:54:15,850: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 16:54:15,852: INFO: common: created directory atartifacts:]
+[2025-12-10 16:56:18,691: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 16:56:18,694: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 16:56:18,696: INFO: common: created directory atartifacts:]
+[2025-12-10 16:58:46,347: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 16:58:46,351: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 16:58:46,353: INFO: common: created directory atartifacts:]
+[2025-12-10 17:28:38,447: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 17:28:38,476: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 17:28:38,480: INFO: common: created directory atartifacts:]
+[2025-12-10 17:30:23,082: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 17:30:23,087: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 17:30:23,089: INFO: common: created directory atartifacts:]
+[2025-12-10 17:33:42,051: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 17:33:42,065: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 17:33:42,067: INFO: common: created directory atartifacts:]
+[2025-12-10 17:42:07,710: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-10 17:42:07,763: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 17:42:07,779: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 17:42:07,780: INFO: common: created directory atartifacts:]
+[2025-12-10 17:42:07,781: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-10 17:42:07,783: INFO: data_ingestion: File already exits:]
+[2025-12-10 17:42:07,989: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-10 17:42:07,990: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-10 17:42:07,993: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 17:42:07,996: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 17:42:07,997: INFO: common: created directory atartifacts:]
+[2025-12-10 17:42:15,755: ERROR: main: [Errno 22] Invalid argument: 'G:/PROJECT/Text-Summarizer/artifacts/data_transformation/transformed_dataset/train/data-00000-of-00001.arrow':]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 23, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage2_data_transformation.py", line 13, in initiate_data_transformation
+    data_transformation.convert()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\data_transformation.py", line 33, in convert
+    ds1.save_to_disk(os.path.join(self.config.root_dir, "transformed_dataset"))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\dataset_dict.py", line 1360, in save_to_disk
+    dataset.save_to_disk(
+    ~~~~~~~~~~~~~~~~~~~~^
+        posixpath.join(dataset_dict_path, k),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_dataset.py", line 1641, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_dataset.py", line 1665, in _save_to_disk_single
+    writer = ArrowWriter(
+        features=shard.features,
+    ...<2 lines>...
+        embed_local_files=True,
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_writer.py", line 451, in __init__
+    self.stream = self._fs.open(path, "wb")
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\spec.py", line 1349, in open
+    f = self._open(
+        path,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 210, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 387, in __init__
+    self._open()
+    ~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 392, in _open
+    self.f = open(self.path, mode=self.mode)
+             ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'G:/PROJECT/Text-Summarizer/artifacts/data_transformation/transformed_dataset/train/data-00000-of-00001.arrow'
+[2025-12-10 17:45:21,250: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-10 17:45:21,254: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 17:45:21,257: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 17:45:21,257: INFO: common: created directory atartifacts:]
+[2025-12-10 17:45:21,258: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-10 17:45:21,258: INFO: data_ingestion: File already exits:]
+[2025-12-10 17:45:21,379: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-10 17:45:21,380: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-10 17:45:21,384: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 17:45:21,386: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 17:45:21,387: INFO: common: created directory atartifacts:]
+[2025-12-10 17:45:24,131: ERROR: main: [Errno 22] Invalid argument: 'G:/PROJECT/Text-Summarizer/artifacts/data_transformation/transformed_dataset/train/data-00000-of-00001.arrow':]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 23, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage2_data_transformation.py", line 13, in initiate_data_transformation
+    data_transformation.convert()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\data_transformation.py", line 33, in convert
+    ds1.save_to_disk(os.path.join(self.config.root_dir, "transformed_dataset"))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\dataset_dict.py", line 1360, in save_to_disk
+    dataset.save_to_disk(
+    ~~~~~~~~~~~~~~~~~~~~^
+        posixpath.join(dataset_dict_path, k),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_dataset.py", line 1641, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_dataset.py", line 1665, in _save_to_disk_single
+    writer = ArrowWriter(
+        features=shard.features,
+    ...<2 lines>...
+        embed_local_files=True,
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_writer.py", line 451, in __init__
+    self.stream = self._fs.open(path, "wb")
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\spec.py", line 1349, in open
+    f = self._open(
+        path,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 210, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 387, in __init__
+    self._open()
+    ~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 392, in _open
+    self.f = open(self.path, mode=self.mode)
+             ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'G:/PROJECT/Text-Summarizer/artifacts/data_transformation/transformed_dataset/train/data-00000-of-00001.arrow'
+[2025-12-10 17:46:52,920: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-10 17:46:52,925: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 17:46:52,929: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 17:46:52,930: INFO: common: created directory atartifacts:]
+[2025-12-10 17:46:52,931: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-10 17:46:52,931: INFO: data_ingestion: File already exits:]
+[2025-12-10 17:46:53,079: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-10 17:46:53,079: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-10 17:46:53,082: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 17:46:53,085: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 17:46:53,086: INFO: common: created directory atartifacts:]
+[2025-12-10 17:46:56,188: INFO: main: Data Transformation Stage has completed:]
+[2025-12-10 17:46:56,188: INFO: main: stage Model Training Stage has started:]
+[2025-12-10 17:46:56,193: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 17:46:56,196: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 17:46:56,197: INFO: common: created directory atartifacts:]
+[2025-12-10 17:51:30,077: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-10 17:51:30,081: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 17:51:30,085: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 17:51:30,086: INFO: common: created directory atartifacts:]
+[2025-12-10 17:51:30,087: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-10 17:51:30,089: INFO: data_ingestion: File already exits:]
+[2025-12-10 17:51:30,241: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-10 17:51:30,241: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-10 17:51:30,245: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 17:51:30,247: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 17:51:30,248: INFO: common: created directory atartifacts:]
+[2025-12-10 17:51:33,188: INFO: main: Data Transformation Stage has completed:]
+[2025-12-10 17:51:33,189: INFO: main: stage Model Training Stage has started:]
+[2025-12-10 17:51:33,192: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 17:51:33,195: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 17:51:33,196: INFO: common: created directory atartifacts:]
+[2025-12-10 18:02:02,246: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-10 18:02:02,251: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 18:02:02,254: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 18:02:02,254: INFO: common: created directory atartifacts:]
+[2025-12-10 18:02:02,255: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-10 18:02:02,256: INFO: data_ingestion: File already exits:]
+[2025-12-10 18:02:02,390: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-10 18:02:02,390: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-10 18:02:02,394: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 18:02:02,398: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 18:02:02,398: INFO: common: created directory atartifacts:]
+[2025-12-10 18:02:05,042: ERROR: main: name 'DatasetDict' is not defined:]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 23, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage2_data_transformation.py", line 13, in initiate_data_transformation
+    data_transformation.convert()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\data_transformation.py", line 34, in convert
+    ds=DatasetDict({
+       ^^^^^^^^^^^
+NameError: name 'DatasetDict' is not defined
+[2025-12-10 18:05:38,771: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-10 18:05:38,775: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 18:05:38,778: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 18:05:38,778: INFO: common: created directory atartifacts:]
+[2025-12-10 18:05:38,779: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-10 18:05:38,780: INFO: data_ingestion: File already exits:]
+[2025-12-10 18:05:38,904: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-10 18:05:38,904: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-10 18:05:38,907: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 18:05:38,910: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 18:05:38,910: INFO: common: created directory atartifacts:]
+[2025-12-10 18:05:41,504: ERROR: main: name 'DatasetDict' is not defined:]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 23, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage2_data_transformation.py", line 13, in initiate_data_transformation
+    data_transformation.convert()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\data_transformation.py", line 34, in convert
+    ds=DatasetDict({
+       ^^^^^^^^^^^
+NameError: name 'DatasetDict' is not defined
+[2025-12-10 18:06:21,667: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-10 18:06:21,671: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 18:06:21,673: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 18:06:21,674: INFO: common: created directory atartifacts:]
+[2025-12-10 18:06:21,675: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-10 18:06:21,675: INFO: data_ingestion: File already exits:]
+[2025-12-10 18:06:21,795: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-10 18:06:21,795: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-10 18:06:21,799: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 18:06:21,802: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 18:06:21,803: INFO: common: created directory atartifacts:]
+[2025-12-10 18:06:25,473: INFO: main: Data Transformation Stage has completed:]
+[2025-12-10 18:06:25,474: INFO: main: stage Model Training Stage has started:]
+[2025-12-10 18:06:25,479: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 18:06:25,482: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 18:06:25,482: INFO: common: created directory atartifacts:]
+[2025-12-10 18:32:36,123: INFO: main: Model Training Stage has completed:]
+[2025-12-10 18:35:16,235: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-10 18:35:16,240: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 18:35:16,244: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 18:35:16,245: INFO: common: created directory atartifacts:]
+[2025-12-10 18:35:16,246: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-10 18:35:16,246: INFO: data_ingestion: File already exits:]
+[2025-12-10 18:35:16,379: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-10 18:35:16,379: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-10 18:35:16,383: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 18:35:16,385: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 18:35:16,386: INFO: common: created directory atartifacts:]
+[2025-12-10 18:35:19,169: INFO: main: Data Transformation Stage has completed:]
+[2025-12-10 18:35:19,170: INFO: main: stage Model Evaluation Stage has started:]
+[2025-12-10 18:35:19,175: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-10 18:35:19,179: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-10 18:35:19,180: INFO: common: created directory atartifacts:]
+[2025-12-10 18:35:19,483: ERROR: main: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus/samsum-model'. Use `repo_type` argument if needed.:]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\utils\hub.py", line 479, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        local_files_only=local_files_only,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+    ...<2 lines>...
+    )
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus/samsum-model'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 50, in <module>
+    model_evaluation_pipeline.inititate_model_evaluation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage_4_model_evaluation.py", line 14, in inititate_model_evaluation
+    model_evaluation.evaluate()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\model_evaluation.py", line 61, in evaluate
+    model_pegasus = AutoModelForSeq2SeqLM.from_pretrained(self.config.model_path).to(device)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 508, in from_pretrained
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<4 lines>...
+        **hub_kwargs,
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\utils\hub.py", line 322, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\utils\hub.py", line 532, in cached_files
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision, repo_type)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\transformers\utils\hub.py", line 143, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(
+        path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision, repo_type=repo_type
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+    ...<2 lines>...
+    )
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus/samsum-model'. Use `repo_type` argument if needed.
+[2025-12-11 00:21:28,108: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-11 00:21:28,128: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-11 00:21:28,130: INFO: common: created directory atartifacts:]
+[2025-12-11 00:22:13,602: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-11 00:22:13,606: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-11 00:22:13,607: INFO: common: created directory atartifacts:]
+[2025-12-11 00:23:19,170: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-11 00:23:19,174: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-11 00:23:19,176: INFO: common: created directory atartifacts:]
+[2025-12-11 00:32:09,885: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-11 00:32:09,889: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-11 00:32:09,891: INFO: common: created directory atartifacts:]
+[2025-12-11 00:33:42,018: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-11 00:33:42,022: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-11 00:33:42,025: INFO: common: created directory atartifacts:]
+[2025-12-11 00:36:32,936: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-11 00:36:32,943: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-11 00:36:32,945: INFO: common: created directory atartifacts:]
+[2025-12-11 00:43:30,470: INFO: rouge_scorer: Using default tokenizer.:]
+[2025-12-11 00:52:22,963: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-11 00:52:22,985: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-11 00:52:22,989: INFO: common: created directory atartifacts:]
+[2025-12-11 00:52:22,993: INFO: common: created directory atartifacts/model_evaluation:]
+[2025-12-11 00:58:54,213: INFO: rouge_scorer: Using default tokenizer.:]
+[2025-12-11 01:10:11,140: INFO: server: Started server process [15552]:]
+[2025-12-11 01:10:11,141: INFO: on: Waiting for application startup.:]
+[2025-12-11 01:10:11,142: INFO: on: Application startup complete.:]
+[2025-12-11 01:10:11,143: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit):]
+[2025-12-11 01:11:58,368: INFO: main: stage Data Ingestion Stage has started:]
+[2025-12-11 01:11:58,373: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-11 01:11:58,377: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-11 01:11:58,377: INFO: common: created directory atartifacts:]
+[2025-12-11 01:11:58,378: INFO: common: created directory atartifacts/data_ingestion:]
+[2025-12-11 01:11:58,379: INFO: data_ingestion: File already exits:]
+[2025-12-11 01:11:58,573: INFO: main: Data Ingestion Stage has completed:]
+[2025-12-11 01:11:58,573: INFO: main: stage Data Transformation Stage has started:]
+[2025-12-11 01:11:58,577: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-11 01:11:58,581: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-11 01:11:58,582: INFO: common: created directory atartifacts:]
+[2025-12-11 01:12:01,626: ERROR: main: [Errno 22] Invalid argument: 'G:/PROJECT/Text-Summarizer/artifacts/data_transformation/transformed_dataset/train/data-00000-of-00001.arrow':]
+Traceback (most recent call last):
+  File "G:\PROJECT\Text-Summarizer\main.py", line 23, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\pipeline\stage2_data_transformation.py", line 13, in initiate_data_transformation
+    data_transformation.convert()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\src\TextSummarizer\components\data_transformation.py", line 40, in convert
+    ds1.save_to_disk(os.path.join(self.config.root_dir, "transformed_dataset"))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\dataset_dict.py", line 1360, in save_to_disk
+    dataset.save_to_disk(
+    ~~~~~~~~~~~~~~~~~~~~^
+        posixpath.join(dataset_dict_path, k),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_dataset.py", line 1641, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_dataset.py", line 1665, in _save_to_disk_single
+    writer = ArrowWriter(
+        features=shard.features,
+    ...<2 lines>...
+        embed_local_files=True,
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\datasets\arrow_writer.py", line 451, in __init__
+    self.stream = self._fs.open(path, "wb")
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\spec.py", line 1349, in open
+    f = self._open(
+        path,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 210, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 387, in __init__
+    self._open()
+    ~~~~~~~~~~^^
+  File "G:\PROJECT\Text-Summarizer\venv\Lib\site-packages\fsspec\implementations\local.py", line 392, in _open
+    self.f = open(self.path, mode=self.mode)
+             ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'G:/PROJECT/Text-Summarizer/artifacts/data_transformation/transformed_dataset/train/data-00000-of-00001.arrow'
+[2025-12-11 01:12:05,133: INFO: common: yaml file config\config.yaml loaded successfully:]
+[2025-12-11 01:12:05,137: INFO: common: yaml file params.yaml loaded successfully:]
+[2025-12-11 01:12:05,137: INFO: common: created directory atartifacts:]
+[2025-12-11 01:13:06,638: INFO: server: Shutting down:]
+[2025-12-11 01:13:06,746: INFO: on: Waiting for application shutdown.:]
+[2025-12-11 01:13:06,747: INFO: on: Application shutdown complete.:]
+[2025-12-11 01:13:06,748: INFO: server: Finished server process [15552]:]

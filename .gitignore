@@ -3,3 +3,4 @@ saved_models/
 outputs/
 logs/
 venv/
+artifacts/

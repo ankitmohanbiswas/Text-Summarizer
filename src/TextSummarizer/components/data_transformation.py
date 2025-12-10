@@ -6,6 +6,7 @@ from src.TextSummarizer.entity import DataIngestionConfig
 from src.TextSummarizer.entity import DataTransformationConfig
 from transformers import AutoTokenizer
 from datasets import load_from_disk
+from datasets import DatasetDict
 
 
 class DataTransformation:
@@ -29,5 +30,11 @@ class DataTransformation:
 
     def convert(self):
         ds=load_from_disk(self.config.data_path)
+        small_train=ds['train'].select(range(2000))
+        small_valid=ds['validation'].select(range(300))
+        ds=DatasetDict({
+           'train': small_train,
+           'validation': small_valid
+        })
         ds1=ds.map(self.cvrt_examples_to_features, batched=True)
         ds1.save_to_disk(os.path.join(self.config.root_dir, "transformed_dataset"))
